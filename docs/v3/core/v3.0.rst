@@ -1233,19 +1233,18 @@ An existing core codec SHOULD be removed from the list when a sufficient number 
 developers and Zarr users deem the codec worth removing, e.g. because of a technical flaw in the 
 algorithm underlying the codec.
 
-Extension codecs
-----------------
+Other codecs
+------------
 
 Zarr implementations MAY support a codec that is not in the list of core codecs 
-(hereafter termed an "extension codec"), provided the extension codec does not use an identifier 
+provided the extension codec does not use an identifier 
 that is already used by a core codec; the identifiers of core codecs are reserved.
-
-This specification places no other constraints on extension codecs. It is possible, through discouraged,
+This specification places no other constraints on these codecs. It is possible, through discouraged,
 that separate developers may define distinct codecs that use the same identifier. 
 To minimize the impact of such name collisions, codec developers are strongly encouraged 
-to publish their codec specifications as additions to the "extension codecs" section of Zarr v3 specification. 
-Publication in the "extension codecs" section does not confer primacy or an official designation to a codec. 
-The list of extension codecs exists expressly as a tool to enable coordinated codec development.
+to register their codec names in the XXX section of Zarr v3 specification. 
+Listing a codec in this way exists expressly as a tool to enable coordinated codec development
+and does not confer primacy or an official designation to a codec.
 
 Stores
 ======
